@@ -1,0 +1,26 @@
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+.dropdown:hover .dropdown-menu{display: block;}
+
+.dropdown-menu li a:hover {background-color: red;
+      color:white;}
+    /* Add a gray background color and some padding to the footer */
+footer {
+  bottom: 0;
+  background-color: #f2f2f2;
+  padding: 10px; 
+  width: 100%;
+  text-align: center;
+  }
+
+h1 {text-align:center;
+    padding:30px;
+    color:white;
+    border-radius:10px;}
+
+.rect { width:100%;
+  height:auto; }
+

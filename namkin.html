@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Farsan & Namkin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="home.css"> 
+
+   <style>
+.panel-body img{ 
+  max-height:150px;
+    max-width:150px; 
+      min-height: 150px;
+      min-width: 150px;}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid" style="background-color: rgba(0,0,0,0.3);    padding: 10px;   ">
+  <img class="logo" style="float:left; padding-top: 40px;" src="logof.png" alt="Logo"/>
+    <h1 style="text-align:center; color:#0000ff;"><b>Raj Sweets & Farsan Mart</b><br></h1>
+    <div style="clear:both;"></div>
+    <h2 style=" text-align: center; color:black;"><i>Anytime Tasty Always Fresh...</i></h2>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Savouries<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="namkin.html">Farsan, Namkin</a></li>
+          <li><a href="wafers.html">Wafers, Bhakarwadi</a></li>
+          <li><a href="sev.html">Sev, Boondi</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sweets<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="traditional.html">Traditional sweets</a></li>
+            <li><a href="bengali.html">Bengali sweets</a></li>
+            <li><a href="halwa.html">Halwa</a></li>
+        </ul>
+      </li>
+      <li><a href="lassi.html">Lassi</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="container text-center">    
+  <h3>Farsan & Namkin</h3><br>
+  <div class="row"><!--Row1-->
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="mix_farsan.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Mix Farsan</h4><h4>Rs.300.00 per kg</h4>
+         <form method="post" action="Cart.php?action=add&id=1">
+                  <input type="hidden" name="hidden_name" value="Mix Farsan">
+                  <input type="hidden" name="hidden_price" value="300">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="tikha_farsan.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Tikha Farsan</h4><h4>RS.450.00 per kg</h4>
+          <form method="post" action="Cart.php?action=add&id=2">
+                  <input type="hidden" name="hidden_name" value="Tikha Farsan">
+                  <input type="hidden" name="hidden_price" value="290">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="poha_chivda.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Poha Chivda</h4><h4>RS.200.00 per kg</h4>
+          <form method="post" action="Cart.php?action=add&id=3">
+                  <input type="hidden" name="hidden_name" value="Poha Chivda">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row"><!--Row2-->
+
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="makai.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Makai Chivda</h4><h4>RS.220.00 per kg</h4>
+            <form method="post" action="Cart.php?action=add&id=4">
+                  <input type="hidden" name="hidden_name" value="Makai Chivda">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form> 
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="falahari_chivda.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Falhari Chivda</h4><h4>Rs.320.00 per kg</h4>
+           <form method="post" action="Cart.php?action=add&id=5">
+                  <input type="hidden" name="hidden_name" value="Falhari Chivda">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="jeera_khakhra.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Jeera Khakhra</h4><h4>Rs.150.00 per kg</h4>
+          <form method="post" action="Cart.php?action=add&id=6">
+                  <input type="hidden" name="hidden_name" value="Jeera Khakhra">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row"><!--Row3-->
+
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="masala_khakra.jpeg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Masala Khakhra</h4><h4>Rs.150.00 per kg</h4>
+          <form method="post" action="Cart.php?action=add&id=7">
+                  <input type="hidden" name="hidden_name" value="Masala Khakhra">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="chakali.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Chakali</h4><h4>Rs.320.00 per kg</h4>
+             <form method="post" action="Cart.php?action=add&id=8">
+                  <input type="hidden" name="hidden_name" value="Chakali">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="tukda_chakali.jpg" class="center" style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Tukda Chakali</h4><h4>Rs.300.00 per kg</h4>
+          <form method="post" action="Cart.php?action=add&id=9">
+                  <input type="hidden" name="hidden_name" value="Tukda Chakali">
+                  <input type="hidden" name="hidden_price" value="250">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Copyright © Raj Sweets & Farsan Mart. All Rights Reserved | Contact Us: +91 90000 00000</p>
+</footer>
+
+</body>
+</html>

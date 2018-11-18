@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="home.css"> 
+
+</head>
+<body>
+
+<div class="container-fluid" style="background-color: rgba(0,0,0,0.3);    padding: 10px;   ">
+  <img class="img-responsive" style="float:left;" src="images/dynelogo.png" alt="Logo" />
+    <h1 style="text-align:center;">Shop Name<br></h1>
+    <div style="clear:both;"></div>
+    <h3 style=" text-align: center; color:white;">Mission, Vision and Values</h3>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Savouries<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="namkin.html">Farsan, Namkin</a></li>
+          <li><a href="wafers.html">Wafers, Bhakarwadi</a></li>
+          <li><a href="sev.html">Sev, Boondi</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sweets<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="traditional.html">Traditional sweets</a></li>
+            <li><a href="bengali.html">Bengali sweets</a></li>
+            <li><a href="halwa.html">Halwa</a></li>
+        </ul>
+      </li>
+      <li><a href="lassi.html">Lassi</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+    
+  </div>
+</nav>
+
+<div class="container">
+  <h2 style="text-align: center;">Sign Up</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="name">Name:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="contact">Contact No.:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="contact" placeholder="Enter contact no." name="contact">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="add">Address:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="add" placeholder="Enter address" name="add">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="email">Email:</label>
+      <div class="col-sm-7">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Password:</label>
+      <div class="col-sm-7">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-7">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+</body>
+</html>

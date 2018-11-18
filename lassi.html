@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lassi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="home.css"> 
+<style>
+
+.panel-body img{ 
+  max-height:200px;
+    max-width:200px; 
+      min-height: 200px;
+      min-width: 200px;}
+</style>
+  
+</head>
+<body>
+<?php require 'Cart.php'; ?>
+<div class="container-fluid" style="background-color: rgba(0,0,0,0.3);    padding: 10px;   ">
+  <img class="logo" style="float:left; padding-top: 40px;" src="logof.png" alt="Logo"/>
+    <h1 style="text-align:center; color:#0000ff;"><b>Raj Sweets & Farsan Mart</b><br></h1>
+    <div style="clear:both;"></div>
+    <h2 style=" text-align: center; color:black;"><i>Anytime Tasty Always Fresh...</i></h2>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href=index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Savouries<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="namkin.html">Farsan, Namkin</a></li>
+          <li><a href="wafers.html">Wafers, Bhakarwadi</a></li>
+          <li><a href="sev.html">Sev, Boondi</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sweets<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="traditional.html">Traditional sweets</a></li>
+            <li><a href="bengali.html">Bengali sweets</a></li>
+            <li><a href="halwa.html">Halwa</a></li>
+        </ul>
+      </li>
+      <li><a href="lassi.html">Lassi</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="container text-center">    
+  <h3>Lassi</h3><br>
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="dryfruit.jpg" class="center"  style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Dryfruit Lassi</h4><h4>Rs.25.00</h4>
+          <form method="post" action="Cart.php?action=add&id=46">
+                  <input type="hidden" name="hidden_name" value="Dryfruit Lassi">
+                  <input type="hidden" name="hidden_price" value="25">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="keasr_lassi.jpg" class="center"  style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Kesar Lassi</h4><h4>Rs.30.00</h4>
+         <form method="post" action="Cart.php?action=add&id=47">
+                  <input type="hidden" name="hidden_name" value="Kesar Lassi">
+                  <input type="hidden" name="hidden_price" value="30">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="mango1.png" class="center"  style="width:100%" alt="Image"></div>
+        <div class="panel-footer" style="text-align:center;"><h4>Mango Lassi</h4><h4>Rs.30.00</h4>
+          <form method="post" action="Cart.php?action=add&id=48">
+                  <input type="hidden" name="hidden_name" value="Mango Lassi">
+                  <input type="hidden" name="hidden_price" value="30">
+                  <input type="text" name="quantity" class="form-control" value="">
+                  <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Copyright © Raj Sweets & Farsan Mart. All Rights Reserved | Contact Us: +91 90000 00000</p>
+</footer>
+
+</body>
+</html>
